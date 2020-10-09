@@ -1,0 +1,10 @@
+.App {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+button {
+  background-color: rgb(9, 102, 163);
+  color: white;
+  border: transparent;
+  border-radius: 4px;
+  padding: 10px 20px;
+}

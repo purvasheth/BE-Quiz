@@ -4,7 +4,7 @@ import { CSVLink } from "react-csv";
 import QuestionComponent from "./Question";
 import "./styles.css";
 
-export default function Display({ data }) {
+export default function Display({ data, filename }) {
   const [wrong, setWrong] = useState(0);
   const [correct, setCorrect] = useState(0);
   const [csvData, setCsvData] = useImmer([]);
@@ -24,7 +24,7 @@ export default function Display({ data }) {
           <p>
             Correct: {correct} / {correct + wrong}
           </p>
-          <CSVLink filename={"wrong.csv"} data={csvData}>
+          <CSVLink filename={`wrong_${filename}`} data={csvData}>
             <button style={{ backgroundColor: "tomato" }}>
               Wrong Questions
             </button>

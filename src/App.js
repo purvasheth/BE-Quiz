@@ -67,7 +67,10 @@ class App extends React.Component {
                 : "Only CSV file will work")}
           </p>
         </div>
-        <Display data={this.state.data} />
+        <Display
+          data={this.state.data}
+          filename={this.state.csvfile ? this.state.csvfile.name : ".csv"}
+        />
       </div>
     );
   }

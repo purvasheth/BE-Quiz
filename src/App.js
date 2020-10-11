@@ -77,9 +77,10 @@ class App extends React.Component {
             position: !this.state.data && "fixed",
           }}
         >
-          Made by Purva Sheth &nbsp;&nbsp;&nbsp;&nbsp; Contact Me:
-          +91-7798546975 | purvashet@gmail.com |{" "}
-          <a href="https://linkedin.com/in/purva-sheth-41938a167">LinkedIn</a>
+          Made by Purva Sheth &nbsp;&nbsp; Contact Me:+91-7798546975 |
+          purvashet@gmail.com |{" "}
+          <a href="https://linkedin.com/in/purva-sheth-41938a167">LinkedIn</a> |{" "}
+          <a href="https://github.com/purvasheth">GitHub</a>
         </div>
       </div>
     );

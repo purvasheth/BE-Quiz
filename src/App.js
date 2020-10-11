@@ -71,6 +71,16 @@ class App extends React.Component {
           data={this.state.data}
           filename={this.state.csvfile ? this.state.csvfile.name : ".csv"}
         />
+        <div
+          className="footer"
+          style={{
+            position: !this.state.data && "fixed",
+          }}
+        >
+          Made by Purva Sheth &nbsp;&nbsp;&nbsp;&nbsp; Contact Me:
+          +91-7798546975 | purvashet@gmail.com |{" "}
+          <a href="https://linkedin.com/in/purva-sheth-41938a167">LinkedIn</a>
+        </div>
       </div>
     );
   }

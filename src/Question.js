@@ -7,7 +7,9 @@ export default function Question({ setCsvData, row, setCorrect, setWrong }) {
   const [color, setColor] = useState("green");
   function check() {
     const message =
-      val === Answer.toLowerCase() ? "Correct!" : `Wrong! Answer is  ${Answer}`;
+      val === Answer.trim().toLowerCase()
+        ? "Correct!"
+        : `Wrong! Answer is  ${Answer}`;
     SetMessage(message);
   }
 

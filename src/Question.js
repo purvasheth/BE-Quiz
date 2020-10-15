@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-export default function Question({ setCsvData, row, setCorrect, setWrong }) {
+export default function Question({ setCsvData, row, setCorrect, setWrong, inputName }) {
   const { a, b, c, d, Question, Answer } = row;
   const [val, setVal] = useState("");
   const [msg, SetMessage] = useState("");
@@ -33,7 +33,7 @@ export default function Question({ setCsvData, row, setCorrect, setWrong }) {
       <p>
         <input
           type="radio"
-          name="q"
+          name={inputName}
           value="a"
           onChange={(e) => setVal(e.target.value)}
         />{" "}
@@ -42,7 +42,7 @@ export default function Question({ setCsvData, row, setCorrect, setWrong }) {
       <p>
         <input
           type="radio"
-          name="q"
+          name={inputName}
           value="b"
           onChange={(e) => setVal(e.target.value)}
         />{" "}
@@ -51,7 +51,7 @@ export default function Question({ setCsvData, row, setCorrect, setWrong }) {
       <p>
         <input
           type="radio"
-          name="q"
+          name={inputName}
           value="c"
           onChange={(e) => setVal(e.target.value)}
         />{" "}
@@ -60,7 +60,7 @@ export default function Question({ setCsvData, row, setCorrect, setWrong }) {
       <p>
         <input
           type="radio"
-          name="q"
+          name={inputName}
           value="d"
           onChange={(e) => setVal(e.target.value)}
         />{" "}

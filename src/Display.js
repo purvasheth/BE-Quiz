@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useImmer } from "use-immer";
 import { CSVLink } from "react-csv";
 import QuestionComponent from "./Question";
+import uuid from 'react-uuid';
 import "./styles.css";
 
 export default function Display({ data, filename }) {
@@ -47,6 +48,7 @@ export default function Display({ data, filename }) {
                 setCsvData={setCsvData}
                 setCorrect={setCorrect}
                 setWrong={setWrong}
+                inputName={uuid()}
               />
             </div>
           );

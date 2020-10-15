@@ -58,7 +58,7 @@ class App extends React.Component {
             onChange={this.handleChange}
           />
           <p />
-          <button onClick={this.importCSV}> Upload </button>
+          <button onClick={this.importCSV} style={{cursor: "pointer"}}> Upload </button>
 
           <p style={{ color: "red" }}>
             {this.state.error > 0 &&

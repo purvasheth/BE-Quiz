@@ -1,4 +1,4 @@
 node_modules/
-.prettierrc
 build/
+.prettierrc
 package-lock.json

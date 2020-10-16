@@ -26,6 +26,9 @@ button:disabled {
 }
 
 @media only screen and (min-width: 768px) {
+  .container {
+    margin: 5%;
+  }
   .fixed-score-box {
     z-index: 100;
     position: fixed;
@@ -39,10 +42,13 @@ button:disabled {
 }
 
 @media only screen and (max-width: 767px) {
+  .container {
+    margin: 2%;
+  }
   .fixed-score-box {
     z-index: 100;
     position: fixed;
-    width: 85%;
+    width: 100%;
     top: 0%;
     padding: 5px;
     box-shadow: 0.1em 0.1em 1em rgba(0, 0, 0, 0.1);

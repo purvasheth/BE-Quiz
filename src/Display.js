@@ -21,7 +21,7 @@ export default function Display({
   }, [data, setCsvData]);
 
   return (
-    <div style={{ margin: "5%" }}>
+    <div className="container">
       {data && (
         <div className="fixed-score-box">
           <p>Total: {total}</p>
